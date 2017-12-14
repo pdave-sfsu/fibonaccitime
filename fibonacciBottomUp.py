@@ -11,9 +11,12 @@ def fib (n):
         bottomUpArray[x] = bottomUpArray[x-1] + bottomUpArray[x-2]
     return bottomUpArray[n]
 
-for x in range(1, 1000000):
+totalTimeStart = datetime.now()
+for x in range(1, 1001):
     timestart = datetime.now()
     answer = fib(x)
     timeend = datetime.now()
     totaltime = timeend - timestart
     print str(x) + " " + str(answer) + " " + str (totaltime)
+totalTimeEnd = datetime.now()
+print "Total Time" + str(totalTimeEnd - totalTimeStart)

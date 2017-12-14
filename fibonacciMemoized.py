@@ -12,13 +12,16 @@ def fib (n, memo):
         memo[n] = result
     return result
 
-for x in range(1, 1000):
+totalTimeStart = datetime.now()
+for x in range(1, 1001):
     memo = [None] * (x + 1)
     timestart = datetime.now()
     answer = fib(x, memo)
     timeend = datetime.now()
     totaltime = timeend - timestart
     print str(x) + " " + str(answer) + " " + str (totaltime)
+totalTimeEnd = datetime.now()
+print "Total Time" + str(totalTimeEnd - totalTimeStart)
 
 
 
