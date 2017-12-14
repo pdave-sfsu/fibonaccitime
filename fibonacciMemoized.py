@@ -19,3 +19,7 @@ for x in range(1, 1000):
     timeend = datetime.now()
     totaltime = timeend - timestart
     print str(x) + " " + str(answer) + " " + str (totaltime)
+
+
+
+# Only does up to 1000 because of CallStack error
